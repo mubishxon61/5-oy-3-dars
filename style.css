@@ -1,0 +1,110 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+     background-color: #f0f0f0;
+}
+.container {
+    background-color: white;
+    padding: 2rem;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+.input {
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    outline: 2px solid #bbb;
+    padding: 0.5rem 1rem;
+    background: #f8f8f8;
+    color: #222;
+    box-shadow: 0 1px 4px #0001;
+    transition: outline 0.2s, background 0.2s;
+}
+.input:focus {
+    outline: 3px solid #222;
+    background: #fff;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.square {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    border: 2px solid #bbb;
+    background: #eee;
+    margin: 0 4px;
+    transition: 
+        border-color 0.2s,
+        box-shadow 0.2s,
+        border-radius 0.2s,
+        transform 0.2s;
+    cursor: pointer;
+    box-shadow: 0 2px 6px #0001;
+}
+
+.square:hover {
+    border-color: #888;
+    transform: scale(1.08);
+}
+
+.active-square {
+    outline: 3px solid #222;
+    box-shadow: 0 0 16px 2px #2225;
+    border-radius: 50%;
+    border-color: #222;
+    transform: scale(1.15);
+}
+
+.form {
+    margin-bottom: 1rem;
+    background: var(--form-bg, #fff);
+    border-radius: 0.7rem;
+    box-shadow: 0 2px 12px #0002;
+    padding: 1rem 1.5rem;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.btn {
+    flex-grow: 1;
+    cursor: pointer;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #444;
+    transform: translateY(-2px) scale(1.04);
+}
+
+
+
